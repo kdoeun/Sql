@@ -1,0 +1,29 @@
+#2-1
+khjyo2001CREATE TABLE `USER2` (
+	`uid`		VARCHAR(10) PRIMARY KEY,
+	`name`   VARCHAR(10),
+	`hp`		CHAR(13),
+	`age` 	INT 
+);
+
+INSERT INTO `user2` VALUES('A101khjyo2001', '김춘추', '010-1234-1111', 23);
+INSERT INTO `user2` VALUES('A102', '김유신', '010-1234-2222', 25);
+INSERT INTO `user2` VALUES('A103', '장보고', '010-1234-3333', 31);
+
+INSERT INTO `user2` VALUES('A104', '김춘추', '010-1234-1111', 23);
+
+
+#2-2
+CREATE TABLE `USER3` (
+	`uid`		VARCHAR(10) PRIMARY KEY,
+	`name` 	VARCHAR(10),
+	`hp`		CHAR(13) UNIQUE,
+	`age`		INT 
+);
+
+INSERT INTO `user3` VALUES('A101', '김춘추', '010-1234-1111', 23);
+INSERT INTO `user3` VALUES('A102', '김유신', '010-1234-2222', 25);
+INSERT INTO `user3` VALUES('A103', '장보고', '010-1234-3333', 31);
+INSERT INTO `user3` VALUES('A104', '김춘추', '010-1234-1111', 23);
+
+
